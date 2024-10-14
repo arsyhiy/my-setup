@@ -36,6 +36,7 @@ npm --version && printf "npm version\n"  || sudo apt install npm -y
 printf "\n"
 printf "downloading for PPA\n"
 sudo apt install software-properties-common -y
+
 printf "\n"
 
 printf "checking neovim!\n"
