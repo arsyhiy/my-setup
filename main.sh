@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd ~
 clear
 
 TIMEFORMAT="время выполнения %lR" # time сделан чтобы узнать время выполнения скрипта
@@ -32,6 +33,31 @@ python3 --version || sudo apt install python3 -y # проверка есть л�
 git --version && echo "just for knowing the version!"
 gcc --version || sudo apt install build-essential -y
 npm --version && printf "npm version\n"  || sudo apt install npm -y
+
+printf "
+========================================================================================================================
+    zsh installation\n
+========================================================================================================================
+"
+zsh --version || sudo apt install zsh
+
+FILE=/home/arsen/.zshrc
+if test -f "$FILE"; then
+    printf "$FILE exists. \n"
+else 
+    cp .zshrc ~
+fi
+
+directory=/home/arsen/.oh-my-zsh
+if test -d "$directory"; then
+    printf "$directory exists. \n"
+else 
+   git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+
+fi
+
+
+# NOTE: нужно сделать Fonts
 
 printf "\n"
 printf "downloading for PPA\n"
