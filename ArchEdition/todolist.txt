@@ -1,0 +1,4 @@
+добавить скачивание firefox nivm lazy nerdfont
+nodejs npm. gcc не надо он уже добавлен изначально в арч
+установка rust alacritty конфиг алакрити zsh oh mhy zsh  autosugistions 
+emacs добавить конфигурации для емакс и нвим
